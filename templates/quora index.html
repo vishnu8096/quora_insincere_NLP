@@ -1,0 +1,73 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+
+  float: center;
+  display: block;
+  background-color: #A6A6A6;
+  color: #C63535;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  height:100px;
+}
+
+
+
+
+.review {
+  background-color: #A6A6A6;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  margin:auto
+}
+
+textarea {
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 2px;
+  display: inline-block;
+  border: 2px solid #0066ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #0066ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: blue;
+  border-radius: 5px;
+  cursor: pointer;
+  align:center;
+}
+
+</style>
+
+<body>
+   <h1>Classification of Insincere Questions on Quora Data Analysis Project</h1>
+
+<div class = "review">
+  <form action="/predict" method="POST" target="_blank">
+  <textarea name="review_text" placeholder="question pls...." rows="5" cols="40"></textarea>
+  <input type="submit" value="Predict" name ='qs'>
+  </form>
+
+</div>
+
+
+</body>
+</html>
